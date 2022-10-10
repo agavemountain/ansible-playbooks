@@ -1,0 +1,11 @@
+---
+ - name: Ansible install golang
+   hosts: "*"
+   become: true
+   tasks: 
+    - name: Ansible apt-get to get install golang
+      apt:
+        name: golang-go
+        state: present
+        force_apt_get: yes
+        
