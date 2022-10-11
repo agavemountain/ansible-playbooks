@@ -1,0 +1,106 @@
+---
+ - name: Install Code Development
+   hosts: "*"
+   become: true
+   tasks: 
+    - name: Ansible apt-get to get install cmake
+      apt:
+        name: cmake
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install doxygen
+      apt:
+        name: doxygen
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install graphviz
+      apt:
+        name: graphviz
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install libncurses-dev
+      apt:
+        name: libncurses-dev
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install gawk
+      apt:
+        name: gawk
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install flex
+      apt:
+        name: flex
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install bison
+      apt:
+        name: bison
+        state: present
+        force_apt_get: yes 
+
+    - name: Ansible apt-get to get install openssl
+      apt:
+        name: openssl
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install libssl-dev
+      apt:
+        name: libssl-dev
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install dkms
+      apt:
+        name: dkms
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install libelf-dev
+      apt:
+        name: libelf-dev
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install libudev-dev
+      apt:
+        name: libudev-dev
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install libpci-dev
+      apt:
+        name: libpci-dev
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install libiberty-dev
+      apt:
+        name: libiberty-dev
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install autoconf
+      apt:
+        name: autoconf
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install llvm
+      apt:
+        name: llvm
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install nodejs
+      apt:
+        name: nodejs
+        state: present
+        force_apt_get: yes
