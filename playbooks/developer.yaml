@@ -208,3 +208,8 @@
         state: present
         force_apt_get: yes
 
+    - name: Ansible apt-get to get install git flow
+      apt:
+        name: git-flow
+        state: present
+        force_apt_get: yes
