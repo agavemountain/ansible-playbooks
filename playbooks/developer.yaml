@@ -3,6 +3,13 @@
    hosts: "*"
    become: true
    tasks: 
+
+    - name: Ansible apt-get to get install build-essential
+      apt:
+        name: build-essential
+        state: present
+        force_apt_get: yes
+
     - name: Ansible apt-get to get install cmake
       apt:
         name: cmake
@@ -104,3 +111,100 @@
         name: nodejs
         state: present
         force_apt_get: yes
+
+    - name: Ansible apt-get to get install pkg-config
+      apt:
+        name: pkg-config
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install automake
+      apt:
+        name: automake
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install libtool
+      apt:
+        name: libtool
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install make
+      apt:
+        name: make
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install libboost-all-dev
+      apt:
+        name: libboost-all-dev
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install squashfs-tools
+      apt:
+        name: squashfs-tools
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install python-pip
+      apt:
+        name: python-pip
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install multistrap
+      apt:
+        name: multistrap
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install qemu-user-static
+      apt:
+        name: qemu-user-static
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install hashdeep
+      apt:
+        name: hashdeep
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install parted
+      apt:
+        name: parted
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install kpartx
+      apt:
+        name: kpartx
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install dosfstools
+      apt:
+        name: dosfstools
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install squashfuse
+      apt:
+        name: squashfuse
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install wget
+      apt:
+        name: wget
+        state: present
+        force_apt_get: yes
+
+    - name: Ansible apt-get to get install curl
+      apt:
+        name: curl
+        state: present
+        force_apt_get: yes
+
